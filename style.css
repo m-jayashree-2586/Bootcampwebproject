@@ -1,3 +1,7 @@
+@font-face{
+    font-family: alice;
+    src:url(/Assets/astroz/Astroz\ Trial.ttf);
+}
 *{
     padding: 0;
     margin: 0;
@@ -25,12 +29,17 @@ body,html{
     margin-left: 15%;
     position:fixed;
     top: 10px;
+    z-index:3;
+}
+.logo{
+    font-family:alice;
 }
 .navbutton{
     dispay:flex;
     gap:20px;
 
 }
+
 .Browse{
     padding: 10px 15px;
     border-radius: 4px;
@@ -50,4 +59,16 @@ body,html{
     height:300px;
     width:100%;
     background:black;
+}
+.herovideo{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    top:0;
+    z-index:2;
+}
+.video{
+    width: 100%;
+    height:100%;
+    object-fit:cover;
 }
